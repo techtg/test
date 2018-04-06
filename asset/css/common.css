@@ -1,0 +1,47 @@
+.image-handler {
+    max-height: 250px;
+    max-width: 250px;
+}
+
+.image-handler img {
+    width: 100%;
+    height: 100%;
+}
+
+input[type="file"], #file-upload {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.form-col button {
+    display: block;
+}
+
+#tickets {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#tickets td, #tickets th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#tickets tr:nth-child(even){background-color: #f2f2f2;}
+
+#tickets tr:hover {background-color: #ddd;}
+
+#tickets th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}

@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col-lg-12 text-center">
+        <h1 class="mt-5">Example 1</h1>
+        <p class="lead">File upload</p>
+    </div>
+</div>
+
+
+
+<div ng-controller="UploadController">
+    <div class="row">
+        <div class="col col-md-4">
+            <div class="image-handler">
+                <img src="{{uploadme}}" alt="Image preview...">
+            </div>
+        </div>
+        <div class="col col-md-4 form-col" align="center">
+            <label for="file-upload" class="custom-file-upload">
+                Choose file...
+            </label>
+            <input type="file" fileread="uploadme" id="file-upload" accept="image/*" />
+            <button ng-click="uploadImage()" class="btn btn-success"><i class="fa fa-cloud-upload" aria-hidden="true"></i>&nbsp;&nbsp;Upload image</button>
+        </div>
+        <div class="col col-md-4">
+            <div class="image-handler">
+                <img src="{{serverUrl}}" alt="Image uploaded...">
+            </div>
+        </div>
+    </div>
+</div>

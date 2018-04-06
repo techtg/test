@@ -1,0 +1,36 @@
+<div class="row" ng-controller="ticketsCtrl">
+    <div class="col-lg-12 text-center">
+        <h1 class="mt-5">Example 2</h1>
+        <p class="lead">Tickets</p>
+    </div>
+
+    <table id="tickets">
+        <tr>
+            <th>
+                Bus Number<br>
+                <input ng-model="search.bus.number" />
+            </th>
+            <th>Carrier<br>
+                <input ng-model="search.carrier" />
+            </th>
+            <th>Stops<br>
+                <input ng-model="search.stops" />
+            </th>
+            <th>Price<br>
+                <input ng-model="search.price" />
+            </th>
+        </tr>
+        <tr ng-repeat="ticket in posts | filter:search">
+            <td>{{ticket.bus.number}}</td>
+            <td>{{ticket.carrier}}</td>
+            <td>{{ticket.stops}}</td>
+            <td>{{ticket.price | number:2}}</td>
+        </tr>
+    </table>
+
+
+</div>
+
+
+
+
